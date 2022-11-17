@@ -17,6 +17,10 @@
 		588AAF2A2922767D00A335E1 /* DrinkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 588AAF292922767D00A335E1 /* DrinkTests.m */; };
 		588AAF342922767D00A335E1 /* DrinkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 588AAF332922767D00A335E1 /* DrinkUITests.m */; };
 		588AAF362922767D00A335E1 /* DrinkUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 588AAF352922767D00A335E1 /* DrinkUITestsLaunchTests.m */; };
+		588AAF442922768C00A335E1 /* AViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 588AAF432922768C00A335E1 /* AViewController.m */; };
+		588AAF472922769400A335E1 /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 588AAF462922769400A335E1 /* BViewController.m */; };
+		588AAF492922780000A335E1 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 588AAF482922780000A335E1 /* 1.png */; };
+		588AAF4C2922DCF200A335E1 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 588AAF4B2922DCF200A335E1 /* FirstViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,13 @@
 		588AAF2F2922767D00A335E1 /* DrinkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrinkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		588AAF332922767D00A335E1 /* DrinkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrinkUITests.m; sourceTree = "<group>"; };
 		588AAF352922767D00A335E1 /* DrinkUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrinkUITestsLaunchTests.m; sourceTree = "<group>"; };
+		588AAF422922768C00A335E1 /* AViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AViewController.h; sourceTree = "<group>"; };
+		588AAF432922768C00A335E1 /* AViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AViewController.m; sourceTree = "<group>"; };
+		588AAF452922769400A335E1 /* BViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BViewController.h; sourceTree = "<group>"; };
+		588AAF462922769400A335E1 /* BViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BViewController.m; sourceTree = "<group>"; };
+		588AAF482922780000A335E1 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		588AAF4A2922DCF200A335E1 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		588AAF4B2922DCF200A335E1 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,12 +115,19 @@
 		588AAF0C2922767C00A335E1 /* Drink */ = {
 			isa = PBXGroup;
 			children = (
+				588AAF482922780000A335E1 /* 1.png */,
 				588AAF0D2922767C00A335E1 /* AppDelegate.h */,
 				588AAF0E2922767C00A335E1 /* AppDelegate.m */,
 				588AAF102922767C00A335E1 /* SceneDelegate.h */,
 				588AAF112922767C00A335E1 /* SceneDelegate.m */,
 				588AAF132922767C00A335E1 /* ViewController.h */,
 				588AAF142922767C00A335E1 /* ViewController.m */,
+				588AAF4A2922DCF200A335E1 /* FirstViewController.h */,
+				588AAF4B2922DCF200A335E1 /* FirstViewController.m */,
+				588AAF422922768C00A335E1 /* AViewController.h */,
+				588AAF432922768C00A335E1 /* AViewController.m */,
+				588AAF452922769400A335E1 /* BViewController.h */,
+				588AAF462922769400A335E1 /* BViewController.m */,
 				588AAF162922767C00A335E1 /* Main.storyboard */,
 				588AAF192922767D00A335E1 /* Assets.xcassets */,
 				588AAF1B2922767D00A335E1 /* LaunchScreen.storyboard */,
@@ -241,6 +259,7 @@
 			files = (
 				588AAF1D2922767D00A335E1 /* LaunchScreen.storyboard in Resources */,
 				588AAF1A2922767D00A335E1 /* Assets.xcassets in Resources */,
+				588AAF492922780000A335E1 /* 1.png in Resources */,
 				588AAF182922767C00A335E1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +286,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				588AAF152922767C00A335E1 /* ViewController.m in Sources */,
+				588AAF472922769400A335E1 /* BViewController.m in Sources */,
+				588AAF4C2922DCF200A335E1 /* FirstViewController.m in Sources */,
+				588AAF442922768C00A335E1 /* AViewController.m in Sources */,
 				588AAF0F2922767C00A335E1 /* AppDelegate.m in Sources */,
 				588AAF202922767D00A335E1 /* main.m in Sources */,
 				588AAF122922767C00A335E1 /* SceneDelegate.m in Sources */,
@@ -375,7 +397,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -427,7 +449,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
