@@ -6,9 +6,10 @@
 //
 
 #import "BViewController.h"
-
+#define SIZE_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SIZE_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 @interface BViewController ()
-
+@property (nonatomic, strong) UIImageView *imageView;
 @end
 
 @implementation BViewController
@@ -22,9 +23,27 @@
     label.text = _array[_flag];
     label.textColor = [UIColor blackColor];
     label.textAlignment = NSTextAlignmentCenter;
-    label.frame = CGRectMake(0, 200, [UIScreen mainScreen].bounds.size.width, 500);
+    label.frame = CGRectMake(0, 200, [UIScreen mainScreen].bounds.size.width, 200);
     label.font = [UIFont systemFontOfSize:30];
     [self.view addSubview:label];
+    
+    self.imageView = [[UIImageView alloc] init];
+    self.imageView.backgroundColor = [UIColor clearColor];
+    self.imageView.frame = CGRectMake(100, 450, SIZE_WIDTH - 200, SIZE_WIDTH - 200);
+    self.imageView.layer.masksToBounds = YES;
+    self.imageView.layer.cornerRadius = 20;
+    [self.imageView setImage:[UIImage imageNamed:@"1.jpg"]];
+    if ([self.array[self.flag] isEqualToString:@"yn"] || [self.array[self.flag] isEqualToString:@"严宁"]) {
+        [self.imageView setImage:[UIImage imageNamed:@"yn.jpg"]];
+    } else if ([self.array[self.flag] isEqualToString:@"fzq"] || [self.array[self.flag] isEqualToString:@"傅梓棋"]) {
+        [self.imageView setImage:[UIImage imageNamed:@"fzq.jpg"]];
+    } else if ([self.array[self.flag] isEqualToString:@"zxb"] || [self.array[self.flag] isEqualToString:@"翟旭博"]) {
+        [self.imageView setImage:[UIImage imageNamed:@"zxb.jpg"]];
+    } else if ([self.array[self.flag] isEqualToString:@"zzy"] || [self.array[self.flag] isEqualToString:@"张泽宇"]) {
+        [self.imageView setImage:[UIImage imageNamed:@"zzy.jpg"]];
+    }
+    
+    [self.view addSubview:self.imageView];
 }
 
 - (void)press {

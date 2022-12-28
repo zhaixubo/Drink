@@ -12,9 +12,10 @@
 @end
 
 @implementation AViewController
-
+int a = 0,b = 0,c = 0,d = 0;
 - (void)viewDidLoad {
     [super viewDidLoad];
+
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     UILabel *label = [[UILabel alloc] init];

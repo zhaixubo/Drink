@@ -48,6 +48,8 @@
     _firstTextField.backgroundColor = [UIColor whiteColor];
     _firstTextField.borderStyle = UITextBorderStyleRoundedRect;
     _firstTextField.leftViewMode = UITextFieldViewModeAlways;
+    _firstTextField.backgroundColor = [UIColor orangeColor];
+    _firstTextField.textColor = [UIColor blackColor];
     _firstTextField.placeholder = @"请输入人数";
     _firstTextField.delegate = self;
     [self.view addSubview:_firstTextField];
